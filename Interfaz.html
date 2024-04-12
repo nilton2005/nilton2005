@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+</head>
+<body>
+    <h1>Bienvenido a la tienda</h1>
+    <div class="contenedor-imagenes">
+        <div class="contenedor-articulo">
+            <img src="./Archivo/radioPioner.jpg" alt="Imagen 1">
+            <form action="Inventario.php" method="post">
+                 <button type="submit" class="boton-comprar">Comprar</button>
+            </form>
+        </div>
+        <div class="contenedor-articulo">
+            <img src="./Archivo/Captura de pantalla 2024-04-12 011727.png" alt="Imagen 2">
+            <form action="Inventario.php" method="post">
+                <button type="submit" class="boton-comprar">Comprar</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+<style>
+    body {
+    background-color: #333;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contenedor-articulo {
+    border: 10px solid white;
+    margin: 10px;
+}
+
+.contenedor-articulo img {
+    max-width: 100%;
+    max-height: 50%;
+}
+
+.boton-comprar {
+    color: aqua;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.boton-comprar:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+h1 {
+    margin-top: 50px;
+}
+</style>
+</html>
